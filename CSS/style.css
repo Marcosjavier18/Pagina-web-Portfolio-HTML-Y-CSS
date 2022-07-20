@@ -90,7 +90,8 @@ body { /*letra de la pagina*/
         color:red;
     } */
 
-    .download-cv{
+    .download-cv,
+    .project-details-button{
         padding: 10px 20px;
         background-color: black;
         color:white;
@@ -151,7 +152,7 @@ body { /*letra de la pagina*/
     
     .contact-section {
     width: 100vw;
-    background-color: yellow;
+    background-color: green;
     color: #fff;
     }
     .portfolio-heading{
@@ -224,4 +225,91 @@ body { /*letra de la pagina*/
         width: 100%;
         margin-top: .5em;
     }
+
+    .contact-headings h2{
+        font-size: 3em;
+
+    }
+
+    .container-contact{
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        width: 100vw;
+        align-items: center;
+        padding: 3em;
+        margin: 0 auto;
+    }
+    .container-contact img{
+        width: 750px;
+        height: 700px;
+        bottom: 0px;
+        grid-column: 1/5;
+    }
+
+    .form{
+        display: grid;
+        flex-direction: column;
+        width: 30vw;
+        margin-top: 2em;
+        grid-column: 5/10;
+        padding: 2.5em;
+    }
     
+    .form input{
+        padding: 10px 20px;
+        margin-bottom: 1em;
+        background: none;
+        border: none;
+        border-bottom: 1px solid red;
+        color:white;
+    }
+
+    .form textarea{ /*debemos poner el mismo color de arriba*/
+        height: 150px;
+        background: none;
+        color:white;
+        padding: 1.5em;
+        border: 1px solid red;
+        border-radius: 5px;
+    }
+    .btn-submit{
+        padding: 10px 20px;
+        margin: 1em;
+        border: none;
+        text-transform: uppercase;
+        background-color: red;
+        border-radius: 15px;
+        cursor: pointer;
+        box-shadow: 1px 3px 10px -5px whitesmoke;
+
+    }
+    .btn-submit:hover{
+        background-color: #fff;
+        box-shadow: none;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 200px;
+        background-color: aqua;
+    }
+    .footer-content h2{
+        font-size: 2em;
+    }
+    .footer-content h5{
+        font-size: 1em;
+        
+    }
+    .sotial-network {
+        display: flex;
+        justify-content: space-evenly;
+        width: 300px;
+        margin-top: .8em;
+    }
+    .sotial-network i{
+        font-size: 1em;
+        color:yellow;
+    }
