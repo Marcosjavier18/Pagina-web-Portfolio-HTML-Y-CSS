@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body { /*letra de la pagina*/
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+}
+.wrapper{ /* pagina de inicio */
+    width: 100vw; /*le damos dimensiones , ocupa el 100% mientras la estamos viendo*/
+    height: 100vh; 
+    background-color: rgba(138, 153, 180, 0.933);
+    color:rgb(228, 228, 228);
+    text-shadow: 0.5px 0.5px 5px black;
+    /* text-shadow: 2px 2px 2px black; */
+
+  }
+  .navbar {
+    display: flex;/* se ponen los elementos unos al lado otro ( MC entre Inicio y demas)*/
+    justify-content: space-between;/* se separan uno a la esquina del otro*/
+    padding: 2em;
+  }
+
+  .brand {/*espacio entre la esquina de la pantalla y los primeros elementos */
+    margin-top: -16px;
+    /* margin-left: -20px; */
+  }
+  .brand span{/* color de C de "MC"*/
+    color: black;
+    text-shadow: 0.1px 0.1px 1px whitesmoke;
+    /* text-shadow: 2px 2px 2px black; */
+  }
+
+  .menu{
+    display:flex; /*pone los elementos de inicio,about.. uno al lado del otro*/
+    width:650px; /*separa los elementos del borde*/
+    justify-content: space-around;/*espacio al final de pantalla*/
+    text-justify: center; /*espacio al final de pantalla*/
+    font-size: 16px;
+    
+  }
+
+  .menu li{
+    list-style: none; /*saca los iconos de la lista*/
+
+  }
+  .menu a{ /*color a etiquetas*/
+    color:white;
+    text-decoration: none;/*saca el subrayado */
+    /* text-shadow: 2px 2px 2px black */
+    padding: 10px 15px;
+    text-shadow: 2px 8px 6px black;
+    
+}
+
+  .menu .active{
+    /* color:red; */
+    color:white;
+    margin:0 auto;
+  }
+  .menu a:hover{
+    background-color: black;
+    color:white;
+    transition: ease-in-out 0.8s;
+  }
+  /* -------------------------MAIN---------------------------- */
+  .main{  /* configuramos la imagen*/
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr); /*separamos en 2 la imagen, de un lado la foto y el otro el texto*/
+    align-items: center;
+  }
+  h1{
+    color:black;
+    font-size: 2em; /*Tamaño de "Marcos Cucatto"*/
+    text-shadow: 0.1px 0.1px 1px whitesmoke;
+    }
+
+    span{
+        color:white;
+    }
+
+    /* .info-content span{
+        color:red;
+    } */
+
+    .download-cv{
+        padding: 10px 20px;
+        background-color: black;
+        color:white;
+        border:none;
+        border-radius: 20px;
+        margin-top: 15px;
+        cursor: pointer;
+        box-shadow: 1px 3px 10px -5px whitesmoke;
+    }
+    .download-cv:hover{
+        background-color: white;
+        /* box-shadow: none; */
+        /* box-shadow: 1px 3px 10px -5px red; */
+        box-shadow: none;
+    }
+    .main img{
+        border: 7px solid red;
+        width: 350px;
+        height: 520px;
+        z-index: 1;
+    }
+
+    .about{
+        display: grid;
+        grid-template-columns: repeat(10,1fr);
+        width: 100vw;
+        align-items: center;
+    }
+    .about img{
+        width: 100%;
+        grid-column: 1/5;
+    }
+    .about-info{
+        grid-column: 5/10;
+        padding: 2.5em;
+    }
+    .about-info h2{
+        font-size: 2em;
+        background-color: yellow ;
+    }
+    .divider{
+        height: 4px;
+        width: 60px;
+        background-color: red;
+        margin-top: 5px;
+        margin-bottom: 2em;
+        border-radius: 50px;
+        border: none;
+    }
+    .about p{
+        margin-top: 1em;
+        font-size: medium;
+    }
+    .portfolio{
+        width: 100vw;
+        background-color: pink;
+    }
+    
+    .contact-section {
+    width: 100vw;
+    background-color: yellow;
+    color: #fff;
+    }
+    .portfolio-heading{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .portfolio-heading h2{
+        font-size: 2.5em;
+        color:green;
+    }
+    .portfolio .container{
+        width: 80vw;
+        height: 80vh;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+                /* CARD */
+                /* 
+                
+                */
+
+    .card{
+        width: 300px;
+        background-color: red;
+        margin: 1em;
+        color:white;
+        font-size: large;
+        height: auto;
+        margin:1em;
+
+    }
+    .card__img{
+        width: 100%;
+        height: 150px;
+        background-image: url(fritexkun.jpeg); /*imagen de fondo*/
+        background-size: cover; /*se sobreexpone adelante*/
+    }
+    .card__title{
+        padding: 20px;
+    }
+    .card__proyect-links{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .card__proyect-links a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .card__proyect-links i {
+    font-size: 1.6em;
+    }
+
+    .card .project-details{
+        margin: 1em;
+        width: 70%;
+    }
+    .card .project-details a{
+        text-decoration: none;
+        color:blue;
+        text-transform: uppercase;
+    }
+    .proyects-details-content{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: .5em;
+    }
+    
