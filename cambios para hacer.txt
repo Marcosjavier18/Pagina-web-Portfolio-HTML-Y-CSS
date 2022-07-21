@@ -1,0 +1,3 @@
+sacarle el fondo a la imagen, dejarme solo a mi.
+cambiar colores y box-shadow, text-shadow.
+agregar division al container contact
